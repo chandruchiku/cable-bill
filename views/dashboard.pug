@@ -1,0 +1,64 @@
+extends layout/base 
+
+block content 
+    // Content Header (Page header)
+    section.content-header
+        h1
+            | Dashboard
+            small Control panel
+        ol.breadcrumb
+            li
+                a(href='#')
+                i.fa.fa-dashboard
+                |  Home
+            li.active Dashboard
+    // Main content
+    section.content
+        // Small boxes (Stat box)
+        .row
+            .col-lg-3.col-xs-6
+                // small box
+                .small-box.bg-aqua
+                    .inner
+                        h3 150
+                        p New Customers
+                    .icon
+                        i.ion.ion-bag
+                    a.small-box-footer(href='#')
+                        | More info 
+                        i.fa.fa-arrow-circle-right
+            .col-lg-3.col-xs-6
+                // small box
+                .small-box.bg-green
+                    .inner
+                        h3 53 %
+                        p Month's collection
+                    .icon
+                        i.ion.ion-stats-bars
+                    a.small-box-footer(href='#')
+                        | More info 
+                        i.fa.fa-arrow-circle-right
+            // ./col
+            .col-lg-3.col-xs-6
+                // small box
+                .small-box.bg-yellow
+                    .inner
+                        h3 44
+                        p New Connections
+                    .icon
+                        i.ion.ion-person-add
+                    a.small-box-footer(href='#')
+                        | More info 
+                        i.fa.fa-arrow-circle-right
+            // ./col
+            .col-lg-3.col-xs-6
+                // small box
+                .small-box.bg-red
+                    .inner
+                        h3 65
+                        p Amount
+                    .icon
+                        i.ion.ios-cash-outline
+                    a.small-box-footer(href='#')
+                        | More info 
+                        i.fa.fa-arrow-circle-right

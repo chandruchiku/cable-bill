@@ -1,0 +1,101 @@
+extends /layout/base
+
+block extraLinks
+    link(rel='stylesheet', href='/plugins/pace/pace.min.css')
+block extraJS
+    script(type='text/javascript', src='/javascripts/bill/payBill.js')
+    script(type='text/javascript', src='/plugins/pace/pace.min.js')
+block content
+        section.content-header
+            h1
+                | View & Pay Bill
+                small Preview
+            ol.breadcrumb
+                li
+                    a(href='/')
+                    i.fa.fa-dashboard
+                    |  Home
+                li
+                    a(href='#') Bill
+                li.active Pay Bill
+        section.content
+            .row
+                // left column
+                .col-md-6
+                    // general form elements
+                    .box.box-primary
+                        .box-header.with-border
+                            h3.box-title Pay Bill
+                        // /.box-header
+                        // form start
+                        form(role='form')
+                            .box-body
+                                .input-group.input-group-sm
+                                    input#custId.form-control(type='text', placeholder='Customer ID')
+                                    span.input-group-btn
+                                        button#btnCustSearch.btn.btn-info.btn-flat(type='button') Search!
+                        // /.box-body
+                        .box-footer
+                            #paymentInitDiv.row.hidden
+                                // /.col
+                                .col-xs-12
+                                    p.lead Amount Due on : 2/22/2014
+                                    .table-responsive
+                                    table.table
+                                        tr
+                                        th(style='width:50%') Bill No :
+                                        td 2549521
+                                        tr
+                                        th Bill Date :
+                                        td 21st June 2017
+                                        tr
+                                        th STB No :
+                                        td XRS554856
+                                        tr
+                                        th Amount Due :
+                                        td 580.00
+                                        tr
+                                        th Amount Paid :
+                                        td
+                                            input#amountPaid.form-control(type='number', placeholder='Enter payable amount')
+                                    button#btnPay.btn.btn-success.pull-right(type='button')
+                                        i.fa.fa-credit-card
+                                        |  Pay Bill
+                                // /.col
+                                // /.row
+                            #paymentConfDiv.row.hidden
+                                .col-xs-12
+                                    p.lead Amount Due on : 2/22/2014
+                                    .table-responsive
+                                    table.table
+                                        tr
+                                        th(style='width:50%') Bill No :
+                                        td 2549521
+                                        tr
+                                        th Bill Date :
+                                        td 21st June 2017
+                                        tr
+                                        th STB No :
+                                        td XRS554856
+                                        tr
+                                        th Amount Due :
+                                        td 580.00
+                                        tr
+                                        th Amount Paid :
+                                        td 500
+                                    button#btnConfirm.btn.btn-success.pull-right(type='button')
+                                        i.fa.fa-check
+                                        |  Confirm
+                                    button#btnBack.btn.btn-primary.pull-right(type='button', style='margin-right: 10px;')
+                                        i.fa.fa-chevron-left
+                                        |  Back
+                            #paymentDoneDiv.row.hidden
+                                .col-xs-12
+                                    .alert.alert-success
+                                        h4
+                                            i.icon.fa.fa-check
+                                            |  Success!
+                                        |                                     Bill for the month of -- has been paid succesfully.
+                                    button#btnBackHome.btn.btn-primary.pull-right(type='button', style='margin-right: 10px;')
+                                        i.fa.fa-chevron-left
+                                        |  Back

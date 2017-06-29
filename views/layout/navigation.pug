@@ -1,0 +1,45 @@
+header.main-header
+	a(href='/').logo
+		span.logo-mini
+			<b>B</b> A
+		span.logo-lg
+			<b>Billing</b> Admin
+	nav(role='navigation').navbar.navbar-static-top
+		a(href='#', role='button', data-toggle='offcanvas').sidebar-toggle
+			span.sr-only Toggle Navigation
+			span.icon-bar
+			span.icon-bar
+			span.icon-bar
+		div.navbar-custom-menu
+			ul.nav.navbar-nav
+				li.dropdown.user.user-menu
+					a(href='#',data-toggle='dropdown').dropdown-toggle
+						img(src='/adminlte/dist/img/user2-160x160.jpg',alt='User Image').user-image
+						span.hidden-xs
+							| User Name
+					ul.dropdown-menu
+						li.user-header
+							img(src='/adminlte/dist/img/user2-160x160.jpg',alt='User Image').img-circle
+							p
+								| User Name - Designation
+								small
+									| Member since Nov. 2012
+						li.user-body
+							.row
+								.col-xs-4.text-center
+									a(href='#')
+										| Followers
+								.col-xs-4.text-center
+									a(href='#')
+										| Sales
+								.col-xs-4.text-center
+									a(href='#')
+										| Friends
+
+						li.user-footer
+							.pull-left
+								a(href='#').btn.btn-default.btn-flat
+									| Profile
+							.pull-right
+								a(href='#').btn.btn-default.btn-flat
+									| Sign out

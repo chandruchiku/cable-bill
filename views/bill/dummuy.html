@@ -1,0 +1,111 @@
+<section class="content">
+    <div class="row">
+        <!-- left column -->
+        <div class="col-md-6">
+            <!-- general form elements -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Pay Bill</h3>
+                </div>
+                <!-- /.box-header -->
+                <!-- form start -->
+                <form role="form">
+                    <div class="box-body">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" id='custId' placeholder="Customer ID">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-info btn-flat" id='btnCustSearch'>Search!</button>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer">
+                        <div class="row" id='paymentInitDiv'>
+                            <!-- /.col -->
+                            <div class="col-xs-12">
+                                <p class="lead">Amount Due on : 2/22/2014</p>
+
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tr>
+                                            <th style="width:50%">Bill No :</th>
+                                            <td>2549521</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Bill Date :</th>
+                                            <td>21st June 2017</td>
+                                        </tr>
+                                        <tr>
+                                            <th>STB No :</th>
+                                            <td>XRS554856</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Amount Due :</th>
+                                            <td>580.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Amount Paid :</th>
+                                            <td><input type="number" class="form-control" id="amountPaid" placeholder="Enter payable amount"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <button type="button" class="btn btn-success pull-right"><i class="fa fa-credit-card" id='btnPay'></i> Pay Bill
+                                            </button>
+                            </div>
+                            <!-- /.col -->
+
+                        </div>
+                        <!-- /.row -->
+                        <div class="row" id='paymentConfDiv'>
+                            <div class="col-xs-12">
+                                <p class="lead">Amount Due on : 2/22/2014</p>
+
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tr>
+                                            <th style="width:50%">Bill No :</th>
+                                            <td>2549521</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Bill Date :</th>
+                                            <td>21st June 2017</td>
+                                        </tr>
+                                        <tr>
+                                            <th>STB No :</th>
+                                            <td>XRS554856</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Amount Due :</th>
+                                            <td>580.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Amount Paid :</th>
+                                            <td>500</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <button type="button" class="btn btn-success pull-right"><i class="fa fa-check" id='btnPay' ></i> Confirm
+                                            </button>
+                                <button type="button" class="btn btn-primary pull-right" style="margin-right: 10px;"><i class="fa fa-chevron-left" id='btnPay' ></i> Back
+                                            </button>
+
+                            </div>
+
+                        </div>
+                        <div class="row" id='paymentDoneDiv'>
+                            <div class='col-xs-12'>
+                                <div class="alert alert-success">
+                                    <h4><i class="icon fa fa-check"></i> Success!</h4>
+                                    Bill for the month of -- has been paid succesfully.
+                                </div>
+                                <button type="button" class="btn btn-primary pull-right" style="margin-right: 10px;"><i class="fa fa-chevron-left" id='btnPay' ></i> Back
+                                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+</section>

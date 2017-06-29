@@ -1,0 +1,93 @@
+aside.main-sidebar
+	section.sidebar
+		.user-panel
+			.pull-left.image
+				img(src='/adminlte/dist/img/user2-160x160.jpg',alt='User Image').img-circle
+			.pull-left.info
+				p Rango
+				a(href='#')
+					i.fa.fa-circle.text-success 
+					| Online
+		form(action='#',method='get').sidebar-form
+			.input-group
+		ul.sidebar-menu
+			li.header
+				| Main Navigation
+			li.treeview
+				a(href='#')
+					i.fa.fa-dashboard
+					span
+						| Dashboard
+					span.pull-right-container
+						i.fa.fa-angle-left.pull-right
+				ul.treeview-menu
+					li
+						a(href='/')
+							i.fa.fa-circle-o
+							| BillBoard
+			li.treeview
+				a(href='#')
+					i.fa.fa-dashboard
+					span
+						| Billing
+					span.pull-right-container
+						i.fa.fa-angle-left.pull-right
+				ul.treeview-menu
+					li
+						a(href='/view/payBill')
+							i.fa.fa-circle-o
+							| Pay Bill
+			li.treeview
+				a(href='#')
+					i.fa.fa-user
+					span
+						| User Management
+					span.pull-right-container
+						span.label.label-primary.pull-right
+							| 4
+				ul.treeview-menu
+					li
+						a(href='/view/user/addUser')
+							i.fa.fa-circle-o
+							| Add User
+					li
+						a(href='/view/user/manageUser')
+							i.fa.fa-circle-o
+							| Manage Users
+			li.treeview
+				a(href='#')
+					i.fa.fa-users
+					span
+						| Customer Management
+					span.pull-right-container
+						span.label.label-primary.pull-right
+							| 4
+				ul.treeview-menu
+					li
+						a(href='/view/customer/addCustomer')
+							i.fa.fa-circle-o
+							| Add Customer
+					li
+						a(href='/view/customer/manageCustomer')
+							i.fa.fa-circle-o
+							| Manage Customerss
+			li.treeview
+				a(href='#')
+					i.fa.fa-pie-chart
+					span
+						| Reports
+					span.pull-right-container
+						i.fa.fa-angle-left.pull-right
+				ul.treeview-menu
+					li
+						a(href='/view/report/monthlyReport')
+							i.fa.fa-circle-o
+							| Monthly Report
+					li
+						a(href='/view/report/agentWise')
+							i.fa.fa-circle-o
+							| Agentwise Report
+					li
+						a(href='/view/report/customer')
+							i.fa.fa-circle-o
+							| Customer 
